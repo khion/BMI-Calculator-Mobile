@@ -10,9 +10,9 @@
 		7941C4C228EE904B0017D1F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941C4C128EE904B0017D1F5 /* AppDelegate.swift */; };
 		7941C4C428EE904B0017D1F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941C4C328EE904B0017D1F5 /* SceneDelegate.swift */; };
 		7941C4C628EE904C0017D1F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941C4C528EE904B0017D1F5 /* ViewController.swift */; };
-		7941C4C928EE904C0017D1F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7941C4C728EE904C0017D1F5 /* Main.storyboard */; };
 		7941C4CB28EE904D0017D1F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7941C4CA28EE904D0017D1F5 /* Assets.xcassets */; };
 		7941C4CE28EE904D0017D1F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7941C4CC28EE904D0017D1F5 /* LaunchScreen.storyboard */; };
+		7941C4DA28EE92430017D1F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7941C4D828EE92430017D1F5 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		7941C4C128EE904B0017D1F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7941C4C328EE904B0017D1F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7941C4C528EE904B0017D1F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7941C4C828EE904C0017D1F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7941C4CA28EE904D0017D1F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7941C4CD28EE904D0017D1F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7941C4CF28EE904D0017D1F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7941C4D928EE92430017D1F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../BMI-Calculator-iOS13/BMI Calculator/Views/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +58,37 @@
 			children = (
 				7941C4C128EE904B0017D1F5 /* AppDelegate.swift */,
 				7941C4C328EE904B0017D1F5 /* SceneDelegate.swift */,
-				7941C4C528EE904B0017D1F5 /* ViewController.swift */,
-				7941C4C728EE904C0017D1F5 /* Main.storyboard */,
+				7941C4D528EE920A0017D1F5 /* Model */,
+				7941C4D628EE92140017D1F5 /* View */,
+				7941C4D728EE921F0017D1F5 /* Controllers */,
 				7941C4CA28EE904D0017D1F5 /* Assets.xcassets */,
 				7941C4CC28EE904D0017D1F5 /* LaunchScreen.storyboard */,
 				7941C4CF28EE904D0017D1F5 /* Info.plist */,
 			);
 			path = "BMI Calculator Mobile";
+			sourceTree = "<group>";
+		};
+		7941C4D528EE920A0017D1F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7941C4D628EE92140017D1F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7941C4D828EE92430017D1F5 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7941C4D728EE921F0017D1F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7941C4C528EE904B0017D1F5 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +149,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7941C4DA28EE92430017D1F5 /* Main.storyboard in Resources */,
 				7941C4CE28EE904D0017D1F5 /* LaunchScreen.storyboard in Resources */,
 				7941C4CB28EE904D0017D1F5 /* Assets.xcassets in Resources */,
-				7941C4C928EE904C0017D1F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,20 +171,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7941C4C728EE904C0017D1F5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7941C4C828EE904C0017D1F5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7941C4CC28EE904D0017D1F5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7941C4CD28EE904D0017D1F5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7941C4D828EE92430017D1F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7941C4D928EE92430017D1F5 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -287,6 +311,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F8N74STP9L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BMI Calculator Mobile/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,6 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F8N74STP9L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BMI Calculator Mobile/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
